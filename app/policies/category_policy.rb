@@ -8,7 +8,7 @@ class CategoryPolicy < ApplicationPolicy
   end
 
   def create?
-    #user.role?(:admin)
+    user.present? && user.role?(:admin)
   end
 
 end

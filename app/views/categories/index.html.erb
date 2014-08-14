@@ -3,12 +3,18 @@
 <p> Links to all the categories <p>
 
 <% if policy(Category.new).create? %>
-  <%= link_to "Add Category", new_category_path, class: 'btn btn-success' %>
+  
 <% end %>
+<%= link_to "Add Category", new_category_path, class: 'btn btn-success' %>
 
+<div class="row">
+  <% @categories.each do |category| %>
+  <div class="col-md-3"> 
+      <%= link_to category.name, category_path(category.id) %> 
+  </div>
 
-<% @categories.each do |category| %>
-  <%= link_to category.name, category_path(category.id) %> 
+</div>
+
 <% end %>
 
 <!--TODOs 
