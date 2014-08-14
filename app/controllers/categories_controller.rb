@@ -34,7 +34,7 @@ class CategoriesController < ApplicationController
     @category = Category.find(params[:id])
     #authorize @category
     if @category.update_attributes(params.require(:category).permit(:name))
-      redirect_to @cateogry
+      redirect_to @category
     else
       flash[:error] = "Error saving category. Please try again"
       render :edit
