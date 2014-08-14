@@ -19,9 +19,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-gem 'bootstrap-sass', '~> 3.1.1'
-gem 'devise'
-gem 'figaro'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
@@ -36,6 +34,11 @@ gem 'spring',        group: :development
  group :development do
    gem 'sqlite3'
  end
+
+gem 'bootstrap-sass', '~> 3.1.1'
+gem 'devise'
+gem 'figaro'
+gem 'pundit'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
