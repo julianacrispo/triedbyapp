@@ -1,5 +1,6 @@
 <h1>Categories#index</h1>
 <p>Find me in app/views/categories/index.html.erb</p>
+<p> Links to all the categories <p>
 
 <% if policy(Category.new).create? %>
   <%= link_to "Add Category", new_category_path, class: 'btn btn-success' %>
