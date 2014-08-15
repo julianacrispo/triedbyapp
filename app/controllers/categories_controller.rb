@@ -41,4 +41,18 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def destroy
+    @category = Category.find(params[:id])
+    name = @category.name
+    #authorize @category
+
+    if @category.destroy
+      flash[:notice] = "\"#{name}\" was deleted successfully."
+      redirect_to categories_path
+    else
+      flash[:error] = "There was an error deleting the category."
+      render :show
+    end
+  end
+
 end
