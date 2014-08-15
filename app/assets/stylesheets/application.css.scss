@@ -1,7 +1,10 @@
 @import "bootstrap";
 
+$jumbotron-color: #00bb66;
+$jumbotron-bg: #00bb66;
+
 body {
-    background-color: cyan;
+    background-color: #ff3311;
 }
 
 #background {
@@ -10,5 +13,17 @@ body {
     left: 0px;
     width: 70%;
     height: 100%;
-    background-color: pink; 
+    background-color: #00bb66; 
+}
+
+.welcome-container-left {
+  margin-left: 40%;
+  margin-top: 20%;
+  color: white;
+}
+
+.welcome-container-right {
+  text-align: right;
+  margin-top: 20%;
+  color: white;
 }
