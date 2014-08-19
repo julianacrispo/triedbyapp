@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get 'welcome/about'
   resources :categories
+  resources :products
 
   root to: 'welcome#index'
 
