@@ -13,7 +13,11 @@
     <h4> Share your experiences </h4>
     <h4> Make products better</h4>
     <h4> 
-      <%= link_to "Sign Up with Linkedin", class: 'btn btn-success' %> 
+      
+      <%= link_to "Sign Up", new_user_registration_path %> |
+      <%= link_to "Log In", new_user_session_path %><br>
+      <%= link_to "Sign Up with Linkedin", class: 'btn btn-success' %> <br>
+      <%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
     </h4>
   </div>
 
